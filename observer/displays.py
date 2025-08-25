@@ -1,3 +1,8 @@
+
+from Subject import WeatherData
+from clases_base_abstractas import DisplayElement, Observer
+
+
 class CurrentConditionsDisplay(Observer, DisplayElement):
     def __init__(self, weather_data: WeatherData):
         self._temperature = 0.0
